@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ro.pub.cs.systems.eim.practicaltest01.view.PracticalTest01MainActivity">
+
+    <Button
+        android:id="@+id/navigate_to_secondary_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:text="@string/navigate_to_secondary_activity"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2">
+        <EditText
+            android:id="@+id/left_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="number"
+            android:ems="9"
+            android:gravity="center"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="@string/zero"/>
+
+        <EditText
+            android:id="@+id/right_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="number"
+            android:ems="9"
+            android:gravity="center"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="@string/zero"/>
+
+        <Button
+            android:id="@+id/press_me_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:text="@string/press_me"/>
+
+        <Button
+            android:id="@+id/press_me_too_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:text="@string/press_me_too"/>
+    </GridLayout>
+
+</LinearLayout>
